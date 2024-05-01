@@ -3,7 +3,7 @@ agent: tonic.torch.agents.PPO(model=ppo_swimmer_model())
 before_training: null
 environment: tonic.environments.ControlSuite('swimmer-swim', time_feature=True)
 header: from neurobo.ncap.swimmer import ppo_swimmer_model
-name: ncap_ppo
+name: pretrained_ncap_ppo
 note: null
 parallel: 1
 seed: 0
