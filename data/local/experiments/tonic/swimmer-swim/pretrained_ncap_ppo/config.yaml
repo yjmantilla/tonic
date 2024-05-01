@@ -8,4 +8,4 @@ note: null
 parallel: 1
 seed: 0
 sequential: 1
-trainer: tonic.Trainer(steps=int(5e5),save_steps=int(1e5))
+trainer: tonic.Trainer()
