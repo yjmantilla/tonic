@@ -13,7 +13,16 @@ setuptools.setup(
     install_requires=[
         "gym", "matplotlib", "numpy", "pandas", "pyyaml", "termcolor"
     ],
-    packages=setuptools.find_packages(include=["tonic","tonic.*"]),  # Auto-detect submodules
+    packages=[
+        "tonic",
+        "tonic.agents",
+        "tonic.environments",
+        "tonic.explorations",
+        "tonic.replays",
+        "tonic.tensorflow",
+        "tonic.torch",
+        "tonic.utils",  # 🔥 Explicitly list utils!
+    ],
     include_package_data=True,
     zip_safe=False,  # Prevents import issues caused by zip compression
 )
